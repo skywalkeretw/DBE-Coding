@@ -27,11 +27,11 @@ jobs:
         with:
           context: flask_server
           push: true
-          tags: lukeroy/py-server:latest
+          tags: lukeroy/dbe-py-server:latest
 
       - name: Build and push go-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: go_server
           push: true
-          tags: lukeroy/go-server:latest
+          tags: lukeroy/dbe-go-server:latest
