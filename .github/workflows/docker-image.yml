@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       dbe-go-server-tags:
-        description: 'Tags '     
+        description: 'lukeroy/dbe-go-server Tag'     
         required: true
         default: 'latest'
       dbe-py-server-tag:
-        description: 'Tags'     
+        description: 'lukeroy/dbe-py-server Tag'     
         required: true
         default: 'latest' 
 
@@ -37,11 +37,11 @@ jobs:
         with:
           context: flask_server
           push: true
-          tags: lukeroy/dbe-py-server:${{ github.event.inputs.dbe-py-server-tags }}
+          tags: "lukeroy/dbe-py-server:${{ github.event.inputs.dbe-py-server-tags }}"
 
       - name: Build and push lukeroy/dbe-go-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: go_server
           push: true
-          tags: lukeroy/dbe-go-server:${{ github.event.inputs.dbe-go-server-tags }}
+          tags: "lukeroy/dbe-go-server:${{ github.event.inputs.dbe-go-server-tags }}"
