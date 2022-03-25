@@ -25,13 +25,13 @@ jobs:
       - name: Build and push py-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: /flask_server
+          context: flask_server
           push: true
           tags: lukeroy/py-server:latest
 
       - name: Build and push go-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: /go_server
+          context: go_server
           push: true
           tags: lukeroy/go-server:latest
