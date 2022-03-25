@@ -5,6 +5,16 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      dbe-go-server-tags:
+        description: 'Tags '     
+        required: true
+        default: 'latest'
+      dbe-py-server-tag:
+        description: 'Tags'     
+        required: true
+        default: 'latest' 
 
 jobs:
 
@@ -22,16 +32,16 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push py-server
+      - name: Build and push lukeroy/dbe-py-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: flask_server
           push: true
-          tags: lukeroy/dbe-py-server:latest
+          tags: lukeroy/dbe-py-server:${{ github.event.inputs.dbe-py-server-tags }}
 
-      - name: Build and push go-server
+      - name: Build and push lukeroy/dbe-go-server
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: go_server
           push: true
-          tags: lukeroy/dbe-go-server:latest
+          tags: lukeroy/dbe-go-server:${{ github.event.inputs.dbe-go-server-tags }}
