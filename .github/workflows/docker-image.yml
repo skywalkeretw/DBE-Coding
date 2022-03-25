@@ -45,3 +45,10 @@ jobs:
           context: go_server
           push: true
           tags: lukeroy/dbe-go-server:latest 
+
+      - name: Build and push lukeroy/dbe-go-server
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: simple_python
+          push: true
+          tags: lukeroy/dbe-simple-python:latest 
