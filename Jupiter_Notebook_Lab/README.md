@@ -16,7 +16,7 @@ Guide to setup simple Python Jupiter Notebook Lab
 1. Run Jupiter Notebook inside a Docker Container mounting the current directory you are in and exposing the Port `10000` 
     ** **
     ```bash
-        docker run -it --rm -p 10000:8888 -v ${PWD}:/home/jovyan/work jupyter/datascience-notebook:b418b67c225b
+        docker run -it --rm -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes -v ${PWD}:/home/jovyan/work jupyter/datascience-notebook:b418b67c225b
     ```
 
 1. Open your Browser at http://localhost:10000 to use Jupiter Notebook. The Tokken for login is displayed inside the Termianl. Congratulations you now have a running Jupiter Notebook lab.
@@ -38,3 +38,5 @@ Guide to setup simple Python Jupiter Notebook Lab
     winpty docker run -it --rm 10000:8888 ...
 ```
 
+**Q: How to use Jupiter Lab?**
+*A: Jupiter Lab is already activated with: `-e JUPYTER_ENABLE_LAB=yes`, if you started the container without the enironoment variable you can acces the lab by adding `/lab` to the end of the url [lab](localhost:10000/lab)*
