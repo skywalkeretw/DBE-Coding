@@ -1,0 +1,48 @@
+version: '3.7'
+services:
+  service1:
+    container_name: service1
+    build:
+      context: ./service1
+      dockerfile: Dockerfile
+    image: service1
+    env_file:
+      - service1/.env
+    ports:
+      - "8081:8080"
+    restart: on-failure
+    networks:
+      - application
+
+  service2:
+    container_name: service2
+    build:
+      context: ./service2
+      dockerfile: Dockerfile
+    image: service2
+    env_file:
+      - service2/.env
+    ports:
+      - "8082:8080"
+    restart: on-failure
+    networks:
+      - application
+
+  service:
+    container_name: service3
+    build:
+      context: ./service3
+      dockerfile: Dockerfile
+    image: service3
+    env_file:
+      - service/.env
+    ports:
+      - "8083:8080"
+    restart: on-failure
+    networks:
+      - application
+
+# Networks to be created to facilitate communication between containers
+networks:
+  application:
+    driver: bridge
