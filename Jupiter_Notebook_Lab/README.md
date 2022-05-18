@@ -28,6 +28,12 @@ Guide to setup simple Python Jupiter Notebook Lab
 ```bash
     !pip install <module>
 ```
+**Q: How do I install PyTorch**
+*A: check out docs: [pytorch](https://pytorch.org/)*
+```bash
+    !pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+```
+
 
 **Q: Where Are my Notebooks Stored?**  
 *A: All your Notebook will be stored in the Directory you started the Docker Container at.*
