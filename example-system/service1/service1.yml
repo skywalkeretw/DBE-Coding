@@ -18,6 +18,10 @@ spec:
       - name: service1
         image: service1:latest
         imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+                  memory: "128Mi"
+                  cpu: "500m"
         ports:
         - containerPort: 8080
 ---
