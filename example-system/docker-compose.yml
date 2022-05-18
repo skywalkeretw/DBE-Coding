@@ -35,7 +35,7 @@ services:
       dockerfile: Dockerfile
     image: service3
     env_file:
-      - service/.env
+      - service3/.env
     ports:
       - "8083:8080"
     restart: on-failure

@@ -10,7 +10,7 @@ import (
 
 func home(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"body": "Hello From Service 2",
+		"body": "Hello From Service 3",
 	})
 }
 
