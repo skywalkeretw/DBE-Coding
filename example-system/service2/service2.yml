@@ -29,11 +29,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: service2
-  labels:
-    run: service2
 spec:
+  type: NodePort
   ports:
-  - port: 8080
-    protocol: TCP
+  - name: http
+    nodePort: 30952
+    port: 8080
   selector:
-    run: service2
+    app: service2

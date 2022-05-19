@@ -5,13 +5,17 @@ up:
 down:
 	docker-compose -f docker-compose.yml down
 
-create:
+create: 
 	kind create cluster --name ds-cluster --config kind-cluster-config.yml
-
 delete:
 	kind delete cluster --name ds-cluster
 
-load:
+load: create
 	kind load docker-image service1:latest --name ds-cluster
 	kind load docker-image service2:latest --name ds-cluster
 	kind load docker-image service3:latest --name ds-cluster
+
+deploy: load
+	kubectl apply -f service1/service1.yml
+	kubectl apply -f service2/service2.yml
+	kubectl apply -f service3/service3.yml

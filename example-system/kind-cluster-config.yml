@@ -3,7 +3,9 @@ apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
 - role: control-plane
   extraPortMappings:
-  - containerPort: 8080
-    hostPort: 30000
-    listenAddress: "0.0.0.0" # Optional, defaults to "0.0.0.0"
-    protocol: tcp 
+  - containerPort: 30951
+    hostPort: 9091 
+  - containerPort: 30952
+    hostPort: 9092 
+  - containerPort: 30953
+    hostPort: 9093
