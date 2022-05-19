@@ -1,12 +1,17 @@
+compose: build up
+
+kind: build create load deploy
+
 build:
 	docker-compose -f docker-compose.yml build $(c)
 up:
 	docker-compose -f docker-compose.yml up -d
 down:
-	docker-compose -f docker-compose.yml down
+	docker-compose down
 
 create: 
 	kind create cluster --name ds-cluster --config kind-cluster-config.yml
+	
 delete:
 	kind delete cluster --name ds-cluster
 
