@@ -15,12 +15,12 @@ create:
 delete:
 	kind delete cluster --name ds-cluster
 
-load: create
+load: 
 	kind load docker-image service1:latest --name ds-cluster
 	kind load docker-image service2:latest --name ds-cluster
 	kind load docker-image service3:latest --name ds-cluster
 
-deploy: load
+deploy: 
 	kubectl apply -f service1/service1.yml
 	kubectl apply -f service2/service2.yml
 	kubectl apply -f service3/service3.yml

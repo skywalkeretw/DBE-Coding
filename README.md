@@ -1,6 +1,7 @@
 # DBE-Coding
 Programming Examples and helpfull Tips 
 
+Please feel free to open a pull request if you find any issues or would like to add you own code 
 
 ## Guide
 Setup guide for working with Python inside Jupiter Notebooks [Python-Lab](Jupiter_Notebook_Lab/README.md) 

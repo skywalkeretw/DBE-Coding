@@ -28,9 +28,24 @@ func getService1(c *gin.Context) {
 	c.JSON(http.StatusOK, data)
 }
 
+func getService3(c *gin.Context) {
+
+	r, err := http.Get("http://service3:8080")
+	if err != nil {
+		log.Println(err)
+	}
+	var data interface{}
+	err = json.NewDecoder(r.Body).Decode(&data)
+	if err != nil {
+		log.Println(err)
+	}
+	c.JSON(http.StatusOK, data)
+}
+
 func main() {
 	r := gin.Default()
 	r.GET("/", home)
 	r.GET("/s1", getService1)
+	r.GET("/s3", getService3)
 	r.Run(":8080")
 }
