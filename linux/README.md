@@ -7,6 +7,7 @@ The following command will put you into a ubuntu machine where you can try out t
 ```bash
 docker run -it lukeroy/dbe-learn-linux:latest
 ```
+All tools are already preinstalled inside the image (if there is a tool missing please feel free to add it yourself)
 
 ---
 
@@ -107,4 +108,28 @@ Exit vim: pres `esc` then type `wq` and press enter
 ```bash
 nano <file>
 ```
-
+ 
+# Ubuntu
+if you are using a prober Linux system you will need to add `sudo` infront of the `apt` keyword e.g. `sudo apt ...`
+## Get updates
+```bash
+apt update
+```
+## Upgrade all programms
+```bash
+apt upgrade -y
+```
+## Install programm
+```bash
+apt install -y <programm>
+```
+## make a script or programm executable
+```bash 
+chmod +x <file>
+```
+## View linux task manager `htop`
+```bash
+htop
+```
+## Exit or cancel a Programm or script running in the Terminal  
+press `strg + c` to quit
