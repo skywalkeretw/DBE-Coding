@@ -52,3 +52,10 @@ jobs:
           context: simple_python
           push: true
           tags: lukeroy/dbe-simple-python:latest 
+
+      - name: Build and push lukeroy/dbe-learn-linux
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: linux
+          push: true
+          tags: lukeroy/dbe-learn-linux:latest 
