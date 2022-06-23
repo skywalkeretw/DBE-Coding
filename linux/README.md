@@ -7,6 +7,12 @@ The following command will put you into a ubuntu machine where you can try out t
 ```bash
 docker run -it lukeroy/dbe-learn-linux:latest
 ```
+
+**There is a file called info.txt view the file to see the task**
+```bash
+cat info.txt
+```
+
 All tools are already preinstalled inside the image (if there is a tool missing please feel free to add it yourself)
 
 ---
@@ -14,10 +20,6 @@ All tools are already preinstalled inside the image (if there is a tool missing 
 ## View file content
 ```bash
 cat <filename>
-```
-examle inside the Test Environoment 
-```bash
-cat info.txt
 ```
 
 ## Create a new file
