@@ -1,4 +1,110 @@
-Hello user this is a file with some content
+Here are your small tasks to try working with linux
 
-Have fun :D
+1. create a file called test.txt
 
+    touch test.txt
+
+2. create a directory called myFolder
+
+    mkdir myFolder
+
+3. navigate into myFolder
+
+    cd myFolder
+
+4. Check the Folder path
+
+    pwd
+
+5. Create a file called delete-me.txt
+
+    touch delete-me.txt
+
+6. List all the in your current directory (myFolder)
+
+    ls -la
+
+7. delete the file you just created
+
+    rm delete-me.txt
+
+8. Go back a level in the directory structure
+
+    cd ..
+
+9. list content of the directory
+
+    ls
+
+10. Delete the directory
+
+    rmdir myFolder
+
+11. Create a ssh key inside your home directory without a password called my-ssh-key
+
+    ssh-keygen -f ~/.ssh/my-ssh-key -N ""
+
+12. Navigate into you home dir (~)
+
+    cd ~
+
+13. Get Path to home dir
+
+    pwd
+
+14. Navigate into the .ssh directory
+
+    cd .ssh
+
+15. View content of Privat key (my-ssh-key) and the public key (my-ssh-key.pub)
+
+    cat my-ssh-key
+
+    cat my-ssh-key.pub
+
+16. Go back to the Root of the file system
+
+    cd /
+
+17. Check that you are in the root directory the output should be /
+
+    pwd 
+
+18. Create a file called script.sh using a terminal editor
+
+    vim script.sh
+
+19. press i to insert text into the file, you will need to use the arrow keys to move the cursor
+
+20. insert the follwing code insede the quotation marks
+```
+#! /bin/bash
+
+echo "hello world"
+```
+
+21. After you have written the code press esc and then type :wq to save the file and exit
+
+22. Make the file executable 
+
+    chmod +x script.sh
+
+23. Run your script
+
+    ./script.sh
+
+24. Update your system
+
+    apt update
+
+25. Upgrade you installed Packages
+
+    apt upgrade -y
+
+26. Install the programm small
+
+    apt install -y sl
+
+27. Run the sl command you just 
+
+    sl

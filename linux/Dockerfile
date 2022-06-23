@@ -8,6 +8,7 @@ RUN apt update \
     ssh \
     htop
 
+ENV PATH="$PATH:/usr/games/"
 
 COPY info.txt info.txt
 
