@@ -1,5 +1,7 @@
 Here are your small tasks to try working with linux
 
+if you ever need to check this file at any point just type "info"
+
 1. create a file called test.txt
 
     touch test.txt
@@ -101,10 +103,22 @@ echo "hello world"
 
     apt upgrade -y
 
-26. Install the programm small
+26. Install the programm sl
 
     apt install -y sl
 
-27. Run the sl command you just 
+27. Run the sl command you just installed and see what it does :) 
 
     sl
+
+28. Create a new file 
+
+    touch mynewfile.txt
+
+29. Rename the file
+
+    rm mynewfile.txt coolfile.txt
+
+30. Make a copy of the file
+
+    cp coolfile.txt copy.txi

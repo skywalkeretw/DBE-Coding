@@ -49,6 +49,23 @@ rm -rf <dir name>
 
 ---
 
+## Move a file
+```bash
+mv <src> <dest>
+```
+
+## Rename File
+```bash
+mv <file name > <new File name>
+```
+
+## Copy file
+```bash
+cp <original file> <new file>
+```
+
+---
+
 ## View Current Path
 ```bash
 pwd
@@ -111,6 +128,7 @@ Exit vim: pres `esc` then type `wq` and press enter
 nano <file>
 ```
  
+
 # Ubuntu
 if you are using a prober Linux system you will need to add `sudo` infront of the `apt` keyword e.g. `sudo apt ...`
 ## Get updates

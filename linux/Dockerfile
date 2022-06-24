@@ -10,6 +10,8 @@ RUN apt update \
 
 ENV PATH="$PATH:/usr/games/"
 
+COPY info /usr/local/bin/info
+
 COPY info.txt info.txt
 
 ENTRYPOINT ["/bin/bash"]
