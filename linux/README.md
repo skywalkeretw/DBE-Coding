@@ -124,6 +124,49 @@ vim <file>
 ```
 Exit vim: pres `esc` then type `wq` and press enter
 
+Vim Cheat sheet
+
+Save: 			`esc + : + w`  
+Quit:			`esc + : q | q!`  
+Save and Quit:		`esc + : + wq`  
+
+Cut line		`esc + dd`  
+Past			`esc + p`  
+Copy			`esc + y`  
+
+Insert			`esc + i`  
+Insert at beginning:	`esc + shift + i`
+
+Append above		`esc + shift + o`  
+Append below		`esc + o`  
+
+Beginning of Line:	`esc + 0`  
+End of line append: 	`esc + shift + a`  
+End of line: 		`esc + shift + 4 ($)`
+
+End of word:		`esc + shift + e`  
+Start of word:		`esc + shift + b`
+
+Start of file:		`esc + g + g`  
+End of file:		`esc + shift + g`  
+
+jump to line		`esc + : + <linen number>`  
+
+Open Terminal:		`esc + : ter[minal]`
+
+search:			`esc + / + <search string>`   
+next item		`esc + n`  
+previous item		`esc + shift + n`  
+
+replace:		`esc + :%s/ + <search> + / + <replacement> + / gc`
+
+Visual mode:		`esc + v`  
+Mark a word:		`aw`
+
+Linenumbers		`esc + : + set number`  
+Nolinenumbers		`esc + : + set nonumber`  
+Syntax on/off		`esc + : + syntax on | off`
+
 ```bash
 nano <file>
 ```
