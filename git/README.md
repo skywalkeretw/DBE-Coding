@@ -17,6 +17,8 @@ Use the package manager to install git
 sudo apt update && sudo apt install git -y
 ```
 
+---
+## Usage
 Git can be used over the CLI or over your Editor/IDE this guide will explain how to use the CLI
 
 1. Create a new repository on the Github / Gitlab Website (Account is required) top right corner will be a `+` select `new repository` and follow the setup guide.
