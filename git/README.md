@@ -1,5 +1,22 @@
 # Git
 
+## Installation
+### Mac
+git for Mac can be installed using homebrew
+```bash
+brew install git
+```
+
+### Windows
+Insall Docker Desktop from the offical [website](https://git-scm.com/downloads)  
+make sure to install git bash
+
+### Linux (Ubuntu)
+Use the package manager to install git
+```bash
+sudo apt update && sudo apt install git -y
+```
+
 Git can be used over the CLI or over your Editor/IDE this guide will explain how to use the CLI
 
 1. Create a new repository on the Github / Gitlab Website (Account is required) top right corner will be a `+` select `new repository` and follow the setup guide.

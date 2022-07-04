@@ -114,7 +114,7 @@ live real example
 ```bash
 ssh root@192.168.178.42
 ```
-
+---
 ## Editing Files
 To edit files you can use the teriminal editors Nano or Vim
 
@@ -127,7 +127,17 @@ Exit vim: pres `esc` then type `wq` and press enter
 ```bash
 nano <file>
 ```
- 
+---
+## call a http endpoint
+```bash
+curl <url>
+```
+
+## Downloading files
+```bash
+curl -L -o <filename> <url>
+```
+
 
 # Ubuntu
 if you are using a prober Linux system you will need to add `sudo` infront of the `apt` keyword e.g. `sudo apt ...`
