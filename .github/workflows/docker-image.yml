@@ -59,3 +59,10 @@ jobs:
           context: linux
           push: true
           tags: lukeroy/dbe-learn-linux:latest 
+
+      - name: Build and push lukeroy/ai-img-gen
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: linux
+          push: true
+          tags: lukeroy/dbe-ai-img-gen:latest 
